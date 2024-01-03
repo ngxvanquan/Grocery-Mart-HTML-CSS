@@ -6,14 +6,16 @@ html {
         saturate(4042%) hue-rotate(212deg) brightness(90%) contrast(95%);
 
     --body-bg: #f6f6f6;
-    --dropdown-bg: #fff;
-    --dropdown-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
     --header-bg-color: #eee;
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
-
     @include abstracts.breakpoint(lg) {
         --header-bg-color: #fff;
     }
+
+    // Dropdown
+    --dropdown-bg: #fff;
+    --dropdown-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+    --top-menu-border-color: #d2d1d6;
 }
