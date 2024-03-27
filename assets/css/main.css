@@ -1285,7 +1285,6 @@ html {
   opacity: 0;
   visibility: hidden;
   width: min(1240px, 100%);
-  padding-top: 54px;
   position: absolute;
   left: 0;
   transition: 0.3s;
