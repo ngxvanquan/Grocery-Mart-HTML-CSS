@@ -1,7 +1,7 @@
 {
     "name": "project-08-f8",
     "version": "1.0.0",
-    "description": "",
+    "description": "- Project using html css(sass) with a little javascript\r - This is the last project in the f8 course html css pro😎\r - Visit now 👉 https://spectacular-babka-22fe0f.netlify.app/",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
