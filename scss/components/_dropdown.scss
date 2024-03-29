@@ -65,7 +65,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        object-fit: cover;
+        object-fit: contain;
         filter: var(--menu-column-icon-color);
     }
 
@@ -120,6 +120,7 @@
     }
 
     &--notmain {
+        padding: 0;
         height: inherit;
         overflow-y: auto;
         position: initial;

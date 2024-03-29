@@ -1342,7 +1342,7 @@ html {
   position: absolute;
   right: 0;
   bottom: 0;
-  object-fit: cover;
+  object-fit: contain;
   filter: var(--menu-column-icon-color);
 }
 .menu-column__content {
@@ -1387,6 +1387,7 @@ html {
   gap: 30px;
 }
 .sub-menu--notmain {
+  padding: 0;
   height: inherit;
   overflow-y: auto;
   position: initial;
