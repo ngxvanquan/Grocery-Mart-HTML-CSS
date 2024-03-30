@@ -80,15 +80,11 @@
 
     &__item {
         &:hover .dropdown {
-            opacity: 1;
-            visibility: visible;
+            display: block;
         }
 
         @include abstracts.breakpoint(lg) {
             width: 100%;
-            &:hover .dropdown {
-                display: none;
-            }
         }
     }
 
