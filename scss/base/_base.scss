@@ -27,6 +27,8 @@ button {
     background: transparent;
 }
 
+a,
+img,
 button,
 input,
 textarea,
@@ -34,6 +36,7 @@ select {
     color: inherit;
     font-size: inherit;
     font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {
