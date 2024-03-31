@@ -12,6 +12,7 @@
         display: block;
         position: initial;
         padding-top: 0;
+        height: auto;
     }
 
     &__inner {
@@ -50,6 +51,10 @@
     --main-column-width: 292px;
     height: calc(min(582px, 100vh - 158px) - (var(--inner-padding) * 2));
     position: relative;
+
+    @include abstracts.breakpoint(lg) {
+        height: auto;
+    }
 
     &__main {
         width: var(--main-column-width);
@@ -173,12 +178,13 @@
         padding: 0;
         height: inherit;
         overflow-y: auto;
-        position: initial;
+        position: static;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
         @include abstracts.breakpoint(lg) {
             grid-template-columns: 1fr;
+            height: auto;
         }
     }
 }

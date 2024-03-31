@@ -1401,6 +1401,7 @@ html {
     display: block;
     position: initial;
     padding-top: 0;
+    height: auto;
   }
 }
 .dropdown__inner {
@@ -1436,6 +1437,11 @@ html {
   --main-column-width: 292px;
   height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
   position: relative;
+}
+@media (max-width: 991.98px) {
+  .top-menu {
+    height: auto;
+  }
 }
 .top-menu__main {
   width: var(--main-column-width);
@@ -1551,13 +1557,14 @@ html {
   padding: 0;
   height: inherit;
   overflow-y: auto;
-  position: initial;
+  position: static;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 @media (max-width: 991.98px) {
   .sub-menu--notmain {
     grid-template-columns: 1fr;
+    height: auto;
   }
 }
 
