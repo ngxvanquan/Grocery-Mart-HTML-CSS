@@ -9,7 +9,6 @@
     transition: 0.3s;
 
     @include abstracts.breakpoint(lg) {
-        display: block;
         position: initial;
         padding-top: 0;
         height: auto;
@@ -118,10 +117,6 @@
 
     &__item {
         &--active .sub-menu {
-            display: grid;
-        }
-
-        &:hover .sub-menu {
             display: grid;
         }
     }
