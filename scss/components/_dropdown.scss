@@ -11,6 +11,7 @@
     @include abstracts.breakpoint(lg) {
         display: block;
         position: initial;
+        padding-top: 0;
     }
 
     &__inner {
@@ -36,9 +37,11 @@
             border-radius: 0;
             background: transparent;
             box-shadow: none;
-        }
-        &::before {
-            content: none;
+            padding: 0 40px;
+
+            &::before {
+                content: none;
+            }
         }
     }
 }
@@ -102,10 +105,18 @@
 
     &__list {
         margin-top: 19px;
+
+        @include abstracts.breakpoint(lg) {
+            margin-top: 0;
+        }
     }
 
     &__item {
         &--active .sub-menu {
+            display: grid;
+        }
+
+        &:hover .sub-menu {
             display: grid;
         }
     }
@@ -121,6 +132,7 @@
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.5; /* 150% */
+        margin-bottom: 26px;
     }
 
     &__link {
@@ -140,10 +152,21 @@
     grid-template-columns: repeat(3, 1fr);
     padding-left: var(--inner-padding);
     overflow-y: auto;
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
     &__column {
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @include abstracts.breakpoint(lg) {
+            margin-top: 10px;
+        }
     }
 
     &--notmain {
@@ -153,5 +176,9 @@
         position: initial;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+
+        @include abstracts.breakpoint(lg) {
+            grid-template-columns: 1fr;
+        }
     }
 }
