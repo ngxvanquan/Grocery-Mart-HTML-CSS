@@ -31,11 +31,37 @@
             loadHTML("#header", "./templates/header.html");
         </script>
 
-        <main class="main"></main>
+        <div class="container">
+            <!-- Slide Show -->
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <!-- Item 1 -->
+                    <div class="slideshow__item">
+                        <img src="./assets/img/item-1.png" alt="" class="slideshow__img" />
+                    </div>
 
-        <footer id="footer" class="footer"></footer>
-        <script>
-            loadHTML("#footer", "./templates/footer.html");
-        </script>
+                    <!-- Item 2 -->
+                    <div class="slideshow__item">
+                        <img src="./assets/img/item-1.png" alt="" class="slideshow__img" />
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="slideshow__item">
+                        <img src="./assets/img/item-1.png" alt="" class="slideshow__img" />
+                    </div>
+                </div>
+
+                <div class="slideshow__page">
+                    <span class="slideshow__number">1</span>
+                    <span class="slideshow__slider"></span>
+                    <span class="slideshow__number">5</span>
+                </div>
+            </div>
+
+            <footer id="footer" class="footer"></footer>
+            <script>
+                loadHTML("#footer", "./templates/footer.html");
+            </script>
+        </div>
     </body>
 </html>
