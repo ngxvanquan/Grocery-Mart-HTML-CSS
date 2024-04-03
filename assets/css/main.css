@@ -404,9 +404,9 @@ select {
   --grid-gutter-y: 90px;
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .container {
-    max-width: 1370px;
+    max-width: 1140px;
   }
   .row-cols-xxl-1 > * {
     flex: 0 0 auto;
@@ -565,9 +565,9 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 960px;
   }
   .row-cols-xl-1 > * {
     flex: 0 0 auto;
@@ -726,9 +726,9 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 720px;
   }
   .row-cols-lg-1 > * {
     flex: 0 0 auto;
@@ -887,9 +887,9 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 540px;
   }
   .row-cols-md-1 > * {
     flex: 0 0 auto;
@@ -1048,9 +1048,9 @@ select {
     --grid-gutter-y: 90px;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 100%;
   }
   .row-cols-sm-1 > * {
     flex: 0 0 auto;
@@ -1880,6 +1880,15 @@ html {
 }
 .nav-btn__quality {
   margin-left: auto;
+}
+
+.home__container {
+  margin-top: 40px;
+}
+@media (max-width: 767.98px) {
+  .home__container {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
