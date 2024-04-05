@@ -1356,6 +1356,8 @@ html {
       brightness(90%) contrast(95%);
   --sidebar-bg: #fff;
   --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+  --cate-item-text: #000;
+  --cate-item-desc: #1a162e;
 }
 @media (max-width: 991.98px) {
   html {
@@ -1889,6 +1891,29 @@ html {
   .home__container {
     margin-top: 30px;
   }
+}
+.home__heading {
+  color: var(--Secondary-Color-Secondary-1, #1a162e);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+}
+
+.cate-item {
+  display: flex;
+  align-items: center;
+}
+.cate-item__title {
+  color: var(--cate-item-title);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+}
+.cate-item_desc {
+  color: var(--cate-item-desc);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=main.css.map */
