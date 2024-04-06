@@ -1332,6 +1332,11 @@ html.dark {
       brightness(117%) contrast(96%);
   --sidebar-bg: #292e39;
   --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
+  --cate-heading: #fff;
+  --cate-item-title-color: #fff;
+  --cate-item-desc-color: #fff;
+  --cate-item-bg: #171c28;
+  --cate-item-thumb-bg: #292e39;
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -1356,8 +1361,11 @@ html {
       brightness(90%) contrast(95%);
   --sidebar-bg: #fff;
   --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
-  --cate-item-text: #000;
-  --cate-item-desc: #1a162e;
+  --cate-heading: #1a162e;
+  --cate-item-title-color: #000;
+  --cate-item-desc-color: #1a162e;
+  --cate-item-bg: #eee;
+  --cate-item-thumb-bg: #fff;
 }
 @media (max-width: 991.98px) {
   html {
@@ -1669,6 +1677,58 @@ html {
   right: 0;
 }
 
+.cate-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px 26px 20px 20px;
+  border-radius: 16px;
+  background: var(--cate-item-bg);
+}
+@media (max-width: 1399.98px) {
+  .cate-item {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .cate-item {
+    flex-direction: column;
+  }
+}
+.cate-item__title {
+  color: var(--cate-item-title-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+}
+.cate-item__desc {
+  color: var(--cate-item-desc-color);
+  margin-top: 6px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media (max-width: 1199.98px) {
+  .cate-item__desc {
+    text-align: center;
+  }
+}
+.cate-item__thumb {
+  width: 116px;
+  height: 116px;
+  background: var(--cate-item-thumb-bg);
+  border-radius: 8px;
+  object-fit: contain;
+}
+@media (max-width: 1199.98px) {
+  .cate-item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
@@ -1893,27 +1953,14 @@ html {
   }
 }
 .home__heading {
-  color: var(--Secondary-Color-Secondary-1, #1a162e);
+  color: var(--cate-heading);
+  margin-bottom: 20px;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
 }
-
-.cate-item {
-  display: flex;
-  align-items: center;
-}
-.cate-item__title {
-  color: var(--cate-item-title);
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 145.455%;
-}
-.cate-item_desc {
-  color: var(--cate-item-desc);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 150%;
+.home__cate {
+  --grid-gutter-x: 51px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,6 +27,11 @@ html {
     --sidebar-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
 
     // Home Catetory
-    --cate-item-text: #000;
-    --cate-item-desc: #1a162e;
+    --cate-heading: #1a162e;
+    --cate-item-title-color: #000;
+    --cate-item-desc-color: #1a162e;
+
+    // category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
 }
