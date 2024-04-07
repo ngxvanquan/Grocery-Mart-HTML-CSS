@@ -34,4 +34,7 @@ html {
     // category item
     --cate-item-bg: #eee;
     --cate-item-thumb-bg: #fff;
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
+    }
 }
