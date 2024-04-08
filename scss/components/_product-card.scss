@@ -60,6 +60,9 @@
         font-weight: 500;
         line-height: 150%;
         margin-right: auto;
+
+        @include abstracts.screen(md) {
+        }
     }
 
     &__score {
