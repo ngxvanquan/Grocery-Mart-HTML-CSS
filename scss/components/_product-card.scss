@@ -12,6 +12,10 @@
         position: relative;
     }
 
+    &__img-wrap:hover &__thumb {
+        scale: 1.2;
+    }
+
     &__thumb {
         position: absolute;
         top: 0;
@@ -31,12 +35,13 @@
         margin-top: 16px;
     }
 
-    &__title {
-        color: var(--product-card-title-color);
-
+    &__title,
+    &__price,
+    &__score {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 150%;
+        color: var(--product-card-text-color);
     }
 
     &__brand {
@@ -53,23 +58,7 @@
         align-items: center;
     }
 
-    &__price {
-        color: var(--product-card-price-color);
-
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 150%;
-        margin-right: auto;
-
-        @include abstracts.screen(md) {
-        }
-    }
-
-    &__score {
-        color: var(--product-card-score-color);
-
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 150%;
+    &__star {
+        margin: 0 6px 0 auto;
     }
 }
