@@ -70,22 +70,77 @@
             }
         }
 
+        &-input,
+        &-select-wrap {
+            border-radius: 6px;
+            border: 1px solid #d2d1d6;
+            color: var(--filter-form-text-color);
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 142.857%;
+        }
+
         &-input {
             height: 36px;
             width: 121px;
             padding: 0 12px;
-            color: var(--filter-form-text-color);
+        }
 
+        &-select-wrap {
+            display: flex;
+            align-items: center;
+            height: 45px;
+        }
+
+        &-select {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 14px;
+            min-width: var(--width, 108px);
+        }
+
+        &-separate {
+            width: 1px;
+            height: 35px;
+            background: #d2d1d6;
+        }
+
+        &-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
+
+        &-tag {
+            display: flex;
+            align-items: center;
+            height: 32px;
+            padding: 0 12px;
+
+            color: #9e9da8;
             font-size: 1.4rem;
             font-weight: 500;
             line-height: 142.857%;
 
             border-radius: 6px;
-            border: 1px solid #d2d1d6;
+            background: var(--filter-form-tag-bg);
+
+            transition: color 0.15s;
+
+            &:hover {
+                color: var(--filter-form-text-color);
+            }
         }
     }
 
     // End Form
+
+    &__separate {
+        width: 1px;
+        margin: 0 30px;
+        background: #eee;
+    }
 
     &__row {
         display: flex;
