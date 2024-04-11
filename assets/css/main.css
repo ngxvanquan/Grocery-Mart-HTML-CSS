@@ -1881,6 +1881,43 @@ html {
   display: none;
 }
 
+.btn {
+  height: 46px;
+  padding: 0 20px;
+  border-radius: 6px;
+  background: #f8f8fb;
+  user-select: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn + .btn {
+  margin-left: 20px;
+}
+.btn--text {
+  color: #9e9da8;
+  background: transparent;
+  font-weight: 400;
+}
+.btn--rounded, .btn--primary {
+  color: #1a162e;
+  background: #ffb700;
+}
+.btn--outline {
+  background: transparent;
+  color: #1a162e;
+  border: 1px solid #d2d1d6;
+}
+.btn--rounded {
+  border-radius: 99px;
+}
+.btn[disabled], .btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .filter-wrap {
   position: relative;
 }
@@ -1889,7 +1926,7 @@ html {
   position: absolute;
   z-index: 2;
   right: 0;
-  top: 50px;
+  top: 55px;
   border-radius: 20px;
   padding: 30px;
   background: var(--filter-form-bg);
@@ -2024,6 +2061,17 @@ html {
 }
 .filter__row {
   display: flex;
+}
+.filter__footer {
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+.filter__footer-cancel, .filter__footer-result {
+  font-size: 1.5rem;
+}
+.filter__footer-result {
+  height: 40px;
+  padding: 9px 10px;
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {

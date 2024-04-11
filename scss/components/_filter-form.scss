@@ -8,7 +8,7 @@
     position: absolute;
     z-index: 2;
     right: 0;
-    top: 50px;
+    top: 55px;
     border-radius: 20px;
     padding: 30px;
     background: var(--filter-form-bg);
@@ -178,5 +178,20 @@
 
     &__row {
         display: flex;
+    }
+
+    &__footer {
+        justify-content: flex-end;
+        margin-top: 18px;
+
+        &-cancel,
+        &-result {
+            font-size: 1.5rem;
+        }
+
+        &-result {
+            height: 40px;
+            padding: 9px 10px;
+        }
     }
 }
