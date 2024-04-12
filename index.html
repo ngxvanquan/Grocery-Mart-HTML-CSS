@@ -112,16 +112,16 @@
                     <h2 class="home__heading">Total LavAzza 1320</h2>
 
                     <div class="filter-wrap">
-                        <button class="filter-btn">
+                        <button class="filter-btn js-toggle" toggle-target="#home-filter">
                             <span class="filter-btn__text">Filter</span>
                             <img src="./assets/icons/filter.svg" alt="" class="icon filter-btn__icon" />
                         </button>
-                        <div class="filter">
+                        <div class="filter hide" id="home-filter">
                             <img src="./assets/icons/arrow-up.png" alt="" class="filter__arrow" />
 
                             <h3 class="filter__heading">Filter</h3>
                             <form action="" class="filter__form">
-                                <div class="filter__row">
+                                <div class="filter__row filter__content">
                                     <!-- Filter Column 1 -->
                                     <div class="filter__col">
                                         <label for="" class="filter__form-label">Price</label>
@@ -235,8 +235,18 @@
                                 </div>
 
                                 <div class="filter__row filter__footer">
-                                    <button class="btn btn--text filter__footer-cancel">Cancel</button>
-                                    <button class="btn btn--primary filter__footer-result">Show Result</button>
+                                    <button
+                                        class="btn btn--text filter__footer-cancel js-toggle"
+                                        toggle-target="#home-filter"
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        class="btn btn--primary filter__footer-result js-toggle"
+                                        toggle-target="#home-filter"
+                                    >
+                                        Show Result
+                                    </button>
                                 </div>
                             </form>
                         </div>
