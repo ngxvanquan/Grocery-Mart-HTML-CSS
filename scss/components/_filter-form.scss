@@ -8,11 +8,19 @@
     position: absolute;
     z-index: 2;
     right: 0;
-    top: 55px;
+    top: 57px;
     border-radius: 20px;
     padding: 30px;
     background: var(--filter-form-bg);
     filter: drop-shadow(0px 40px 90px var(--filter-form-shadow));
+
+    &__arrow {
+        position: absolute;
+        top: -19px;
+        right: 23px;
+        height: 21px;
+        filter: var(--filter-arrow-up);
+    }
 
     &__form-label,
     &__heading {
@@ -102,6 +110,7 @@
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 146.857%;
+            background: inherit;
             &::placeholder {
                 color: #9e9da8;
                 font-weight: 400;

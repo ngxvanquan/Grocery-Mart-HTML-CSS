@@ -6,7 +6,7 @@
     column-gap: 14px;
     padding: 6px 12px;
     border-radius: 6px;
-    background: #fff;
+    background: var(--filter-btn-bg);
 
     &__text {
         color: var(--filter-btn-color);

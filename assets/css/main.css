@@ -1360,6 +1360,8 @@ html.dark {
   --filter-form-text-color: #fff;
   --filter-form-slider-btn-bg: #292e39;
   --filter-form-tag-bg: #171c28;
+  --filter-arrow-up: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(429%) hue-rotate(183deg)
+      brightness(97%) contrast(90%);
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -1400,6 +1402,8 @@ html {
   --filter-form-text-color: #1a162e;
   --filter-form-slider-btn-bg: #fff;
   --filter-form-tag-bg: #f8f8fb;
+  --filter-arrow-up: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(0%) hue-rotate(17deg)
+      brightness(104%) contrast(100%);
 }
 @media (max-width: 991.98px) {
   html {
@@ -1849,7 +1853,7 @@ html {
   column-gap: 14px;
   padding: 6px 12px;
   border-radius: 6px;
-  background: #fff;
+  background: var(--filter-btn-bg);
 }
 .filter-btn__text {
   color: var(--filter-btn-color);
@@ -1926,11 +1930,18 @@ html {
   position: absolute;
   z-index: 2;
   right: 0;
-  top: 55px;
+  top: 57px;
   border-radius: 20px;
   padding: 30px;
   background: var(--filter-form-bg);
   filter: drop-shadow(0px 40px 90px var(--filter-form-shadow));
+}
+.filter__arrow {
+  position: absolute;
+  top: -19px;
+  right: 23px;
+  height: 21px;
+  filter: var(--filter-arrow-up);
 }
 .filter__form-label, .filter__heading {
   display: block;
@@ -2004,6 +2015,7 @@ html {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 146.857%;
+  background: inherit;
 }
 .filter__form-input::placeholder {
   color: #9e9da8;
