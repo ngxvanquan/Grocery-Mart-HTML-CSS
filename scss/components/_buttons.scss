@@ -36,11 +36,11 @@
         margin-top: 8px;
     }
 
-    &:not(&--like) &__icon--liked {
+    &:not(&--liked) &__icon--liked {
         display: none;
     }
 
-    &--like &__icon {
+    &--liked &__icon {
         display: none;
     }
 }
