@@ -54,6 +54,7 @@
         border: 2px solid #d2d1d6;
         font-size: 1.5rem;
         font-weight: 500;
+        background: inherit;
 
         @include abstracts.screen(lg) {
             width: 40%;
