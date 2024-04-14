@@ -47,6 +47,8 @@
 
 // Button
 .btn {
+    display: flex;
+    align-items: center;
     &:hover {
         opacity: 0.9;
     }

@@ -52,7 +52,7 @@
         padding: 8px 12px;
         border-radius: 6px;
         border: 2px solid #d2d1d6;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 500;
         background: inherit;
 
@@ -62,6 +62,10 @@
 
         @include abstracts.screen(md) {
             width: 50%;
+        }
+
+        @include abstracts.screen(md) {
+            width: 100%;
         }
     }
 
@@ -134,6 +138,11 @@
         transition: translate, filter;
         transition-duration: 0.3s;
 
+        @include abstracts.screen(sm) {
+            width: 45px;
+            height: 45px;
+        }
+
         &:hover {
             filter: grayscale(0);
             translate: 0 -25%;
@@ -160,5 +169,9 @@
         width: 14px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%)
             contrast(99%);
+
+        @include abstracts.screen(sm) {
+            width: 20px;
+        }
     }
 }
