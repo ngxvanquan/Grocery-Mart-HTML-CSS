@@ -1,0 +1,110 @@
+@use "../abstracts";
+
+.auth {
+    display: flex;
+    min-height: 100vh;
+
+    &__intro,
+    &__content {
+        flex: 1;
+    }
+
+    &__img {
+        width: 422px;
+        height: 261px;
+        object-fit: contain;
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        &-desc {
+            max-width: 412px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+    }
+
+    &__content {
+        background: var(--auth-content-bg);
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+
+            width: min(460px, 100%);
+            margin: 0 auto;
+        }
+        &-desc {
+            margin-top: 10px;
+            padding: 0 30px;
+            color: #9e9da8;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%;
+        }
+    }
+
+    &__heading {
+        margin-top: 50px;
+        color: #b9babe;
+        text-align: center;
+
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+
+    &__form {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__link {
+        color: #0071dc;
+
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+
+        &--bottom {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__btn-group {
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    &__btn {
+        width: 100%;
+
+        &--google {
+            color: var(--auth-btn-color);
+        }
+        &-icon {
+            filter: var(--auth-btn-filter);
+        }
+    }
+
+    &__text {
+        margin-top: 110px;
+
+        color: #9e9da8;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 144.444%;
+    }
+}

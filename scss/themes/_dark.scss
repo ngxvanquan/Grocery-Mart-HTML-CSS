@@ -61,4 +61,10 @@ html.dark {
     // Footer
     --footer-bg-color: #171c28;
     --footer-text-color: #9e9da6;
+
+    // Auth
+    --auth-content-bg: #171c28;
+    --auth-btn-color: #b9babe;
+    --auth-btn-filter: brightness(0) saturate(100%) invert(80%) sepia(4%) saturate(179%) hue-rotate(190deg)
+        brightness(93%) contrast(93%);
 }

@@ -49,6 +49,8 @@
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
     &:hover {
         opacity: 0.9;
     }
@@ -64,7 +66,9 @@
     font-weight: 500;
 
     + .btn {
-        margin-left: 20px;
+        &:not(.btn--no-margin) {
+            margin-left: 20px;
+        }
     }
 
     &--text {

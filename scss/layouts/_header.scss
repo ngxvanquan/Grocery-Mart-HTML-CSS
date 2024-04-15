@@ -25,6 +25,11 @@
     @include abstracts.screen(md) {
         justify-content: space-between;
         padding: 16px 0;
+        &__sign-up {
+            height: 40px !important;
+            padding: 0 8px !important;
+            font-size: 1.5rem !important;
+        }
     }
 }
 
