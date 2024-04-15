@@ -26,8 +26,68 @@
         <script src="./assets/js/script.js"></script>
     </head>
     <body>
-        <main>
-            <h1>This is sign up</h1>
+        <main class="auth">
+            <!-- auth intro -->
+            <div class="auth__intro">
+                <img
+                    src="./assets/img/auth/intro.png"
+                    alt="The best of luxury brand values, high quality products, and innovative services"
+                    class="auth__intro-img"
+                />
+                <p class="auth__intro-desc">
+                    The best of luxury brand values, high quality products, and innovative services
+                </p>
+            </div>
+
+            <!-- auth content -->
+            <div class="auth__content">
+                <a href="./" class="logo">
+                    <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+
+                <h1 class="auth__heading">Sign Up</h1>
+                <p class="auth__content-desc">Let's create your account and Shop like a pro and save money.</p>
+
+                <form action="" class="form">
+                    <div class="form__group">
+                        <input placeholder="Email" type="email" class="form__input" />
+                        <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                    </div>
+
+                    <div class="form__group">
+                        <input placeholder="Password" type="password" class="form__input" />
+                        <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                    </div>
+
+                    <div class="form__group">
+                        <input placeholder="Confirm Password" type="password" class="form__input" />
+                        <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                    </div>
+
+                    <div class="form__group form__group--horizontal">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="" id="" class="form__checkbox-input" />
+                            <span class="form__checkbox-label">Set as default card</span>
+                        </label>
+
+                        <a href="#!" class="auth__link">Recovery Password</a>
+                    </div>
+
+                    <div class="form__group auth__btn-group">
+                        <a href="./index-logined.html" class="btn btn--primary">Sign Up</a>
+                        <a href="./index-logined.html" class="btn btn--outline">
+                            <img src="./assets/icons/google.svg" alt="" class="btn__icon" />
+                            Sign in with Gmail
+                        </a>
+                    </div>
+                </form>
+
+                <p class="auth__text">
+                    You have an account yet?
+                    <a href="#!" class="auth__link">Sign In</a>
+                </p>
+            </div>
         </main>
     </body>
 </html>
