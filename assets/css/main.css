@@ -1379,8 +1379,8 @@ html.dark {
 
 html {
   --text-color: #1a162e;
-  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(4042%) hue-rotate(212deg) brightness(90%)
-      contrast(95%);
+  --icon-color: brightness(0) saturate(100%) invert(9%) sepia(21%) saturate(1650%) hue-rotate(210deg) brightness(94%)
+      contrast(97%);
   --body-bg: #f6f6f6;
   --header-bg-color: #eee;
   --top-act-group-bg-color: #fff;
@@ -2680,6 +2680,7 @@ html {
   object-fit: contain;
 }
 .auth__intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2692,6 +2693,10 @@ html {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 144.444%;
+}
+.auth__intro-logo {
+  position: absolute;
+  top: 80px;
 }
 .auth__content {
   background: var(--auth-content-bg);
