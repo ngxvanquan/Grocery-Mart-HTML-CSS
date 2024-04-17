@@ -167,7 +167,7 @@ input,
 textarea,
 select {
   color: inherit;
-  background: inherit;
+  background: transparent;
   font-size: inherit;
   font-family: inherit;
   -webkit-tap-highlight-color: transparent;
