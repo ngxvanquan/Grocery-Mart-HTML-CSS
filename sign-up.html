@@ -43,11 +43,13 @@
                     The best of luxury brand values, high quality products, and innovative services
                 </p>
 
-                <img src="./assets/img/auth/intro-arrow.svg" class="d-none d-md-block" alt="" />
+                <button class="d-none d-md-block auth__intro-next js-toggle" toggle-target="#auth__content">
+                    <img src="./assets/img/auth/intro-arrow.svg" alt="" />
+                </button>
             </div>
 
             <!-- auth content -->
-            <div class="auth__content">
+            <div class="auth__content hide" id="auth__content">
                 <div class="auth__content-inner">
                     <a href="./" class="logo">
                         <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
@@ -57,7 +59,7 @@
                     <h1 class="auth__heading">Sign Up</h1>
                     <p class="auth__content-desc">Let's create your account and Shop like a pro and save money.</p>
 
-                    <form action="" class="form auth__form">
+                    <form action="./index-logined.html" class="form auth__form">
                         <div class="form__group">
                             <div class="form__text-input">
                                 <input placeholder="Email" type="email" class="form__input" />
@@ -89,14 +91,11 @@
                         </div>
 
                         <div class="form__group auth__btn-group">
-                            <a href="./index-logined.html" class="btn btn--primary auth__btn">Sign Up</a>
-                            <a
-                                href="./index-logined.html"
-                                class="btn btn--outline auth__btn auth__btn--google btn--no-margin"
-                            >
+                            <button class="btn btn--primary auth__btn">Sign Up</button>
+                            <button class="btn btn--outline auth__btn auth__btn--google btn--no-margin">
                                 <img src="./assets/icons/google.svg" alt="" class="auth__btn-icon btn__icon" />
                                 Sign in with Gmail
-                            </a>
+                            </button>
                         </div>
                     </form>
 
@@ -107,5 +106,8 @@
                 </div>
             </div>
         </main>
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
     </body>
 </html>

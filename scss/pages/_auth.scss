@@ -33,9 +33,23 @@
             line-height: 144.444%;
         }
 
-        &-logo {
+        &-logo,
+        &-next {
             position: absolute;
+            left: 50%;
+            translate: -50%;
+        }
+
+        &-logo {
             top: 80px;
+
+            @include abstracts.screen(lg) {
+                margin-left: 0;
+            }
+        }
+
+        &-next {
+            bottom: 30px;
         }
     }
 
@@ -46,8 +60,12 @@
             position: fixed;
             inset: 0;
             z-index: 1;
-            translate: 100%;
             transition: translate 0.3s;
+            overflow-y: auto;
+
+            &.hide {
+                translate: 100%;
+            }
         }
 
         &-inner {

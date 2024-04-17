@@ -2694,9 +2694,21 @@ html {
   font-weight: 500;
   line-height: 144.444%;
 }
-.auth__intro-logo {
+.auth__intro-logo, .auth__intro-next {
   position: absolute;
+  left: 50%;
+  translate: -50%;
+}
+.auth__intro-logo {
   top: 80px;
+}
+@media (max-width: 991.98px) {
+  .auth__intro-logo {
+    margin-left: 0;
+  }
+}
+.auth__intro-next {
+  bottom: 30px;
 }
 .auth__content {
   background: var(--auth-content-bg);
@@ -2706,8 +2718,11 @@ html {
     position: fixed;
     inset: 0;
     z-index: 1;
-    translate: 100%;
     transition: translate 0.3s;
+    overflow-y: auto;
+  }
+  .auth__content.hide {
+    translate: 100%;
   }
 }
 .auth__content-inner {
