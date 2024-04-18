@@ -73,13 +73,14 @@
         }
     }
 
-    &__input-icon__error {
+    &__input-icon--error {
         display: none;
         margin-left: 12px;
         width: 24px;
         height: 24px;
         animation: shake 0.5s;
     }
+
     &__pull-right {
         margin-left: auto;
     }
