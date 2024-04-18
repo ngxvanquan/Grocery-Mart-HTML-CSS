@@ -2251,7 +2251,7 @@ html {
   width: 24px;
   height: 24px;
 }
-.form__input-icon--error {
+.form__input-icon__error {
   display: none;
   margin-left: 12px;
   width: 24px;
