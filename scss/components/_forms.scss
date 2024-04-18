@@ -1,12 +1,42 @@
 @use "../abstracts";
 
 .form {
+    :has(:invalid) &__submit-btn {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
     &__group {
         margin-top: 30px;
 
         &--horizontal {
             display: flex;
             align-items: center;
+        }
+    }
+
+    &__error {
+        margin-top: 10px;
+        color: red;
+        font-size: 14px;
+        display: none;
+        font-weight: 500;
+    }
+
+    &__group:has(:invalid):has(&__input:not(:placeholder-shown)) &__text-input {
+        border-color: red;
+        background: rgba($color: red, $alpha: 0.1);
+
+        + .form__error {
+            display: block;
+        }
+
+        .form__input-icon--error {
+            display: block;
+        }
+
+        .form__input-icon {
+            display: none;
         }
     }
 
@@ -38,6 +68,16 @@
 
         &-icon {
             margin-left: 12px;
+            width: 24px;
+            height: 24px;
+
+            &--error {
+                display: none;
+                margin-left: 12px;
+                width: 24px;
+                height: 24px;
+                animation: shake 0.5s;
+            }
         }
     }
 

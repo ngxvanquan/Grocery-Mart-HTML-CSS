@@ -62,23 +62,41 @@
                     <form action="./index-logined.html" class="form auth__form">
                         <div class="form__group">
                             <div class="form__text-input">
-                                <input placeholder="Email" type="email" class="form__input" required />
+                                <input placeholder="Email" type="email" class="form__input" autofocus required />
                                 <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error" />
                             </div>
+                            <p class="form__error">Invalid Email!</p>
                         </div>
 
                         <div class="form__group">
                             <div class="form__text-input">
-                                <input placeholder="Password" type="password" class="form__input" required />
+                                <input
+                                    placeholder="Password"
+                                    type="password"
+                                    class="form__input"
+                                    required
+                                    minlength="6"
+                                />
                                 <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error" />
                             </div>
+                            <p class="form__error">Please enter more than 6 letter!</p>
                         </div>
 
                         <div class="form__group">
                             <div class="form__text-input">
-                                <input placeholder="Confirm Password" type="password" class="form__input" required />
+                                <input
+                                    placeholder="Confirm Password"
+                                    type="password"
+                                    class="form__input"
+                                    required
+                                    minlength="6"
+                                />
                                 <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon--error" />
                             </div>
+                            <p class="form__error">Please enter more than 6 letter!</p>
                         </div>
 
                         <div class="form__group form__group--horizontal">
@@ -91,7 +109,7 @@
                         </div>
 
                         <div class="form__group auth__btn-group">
-                            <button class="btn btn--primary auth__btn">Sign Up</button>
+                            <button class="btn btn--primary auth__btn form__submit-btn">Sign Up</button>
                             <button class="btn btn--outline auth__btn auth__btn--google btn--no-margin">
                                 <img src="./assets/icons/google.svg" alt="" class="auth__btn-icon btn__icon" />
                                 Sign in with Gmail

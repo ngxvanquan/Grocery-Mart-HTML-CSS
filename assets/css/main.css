@@ -1326,6 +1326,20 @@ select {
     display: none !important;
   }
 }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 html.dark {
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%)
@@ -2180,12 +2194,36 @@ html {
   }
 }
 
+:has(:invalid) .form__submit-btn {
+  opacity: 0.5;
+  pointer-events: none;
+}
 .form__group {
   margin-top: 30px;
 }
 .form__group--horizontal {
   display: flex;
   align-items: center;
+}
+.form__error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+  display: none;
+  font-weight: 500;
+}
+.form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__text-input {
+  border-color: red;
+  background: rgba(255, 0, 0, 0.1);
+}
+.form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__text-input + .form__error {
+  display: block;
+}
+.form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__text-input .form__input-icon--error {
+  display: block;
+}
+.form__group:has(:invalid):has(.form__input:not(:placeholder-shown)) .form__text-input .form__input-icon {
+  display: none;
 }
 .form__text-input {
   height: 50px;
@@ -2210,6 +2248,15 @@ html {
 }
 .form__input-icon {
   margin-left: 12px;
+  width: 24px;
+  height: 24px;
+}
+.form__input-icon--error {
+  display: none;
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
+  animation: shake 0.5s;
 }
 .form__pull-right {
   margin-left: auto;
