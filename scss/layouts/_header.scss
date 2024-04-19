@@ -31,6 +31,29 @@
             font-size: 1.5rem !important;
         }
     }
+
+    &__logo {
+        @include abstracts.screen(lg) {
+            gap: 10px !important;
+            margin-left: 40px;
+
+            &-img {
+                width: 24px;
+            }
+
+            &-title {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        @include abstracts.screen(sm) {
+            margin-left: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 .navbar {
