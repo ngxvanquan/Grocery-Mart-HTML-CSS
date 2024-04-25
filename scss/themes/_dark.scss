@@ -67,4 +67,11 @@ html.dark {
     --auth-btn-color: #b9babe;
     --auth-btn-filter: brightness(0) saturate(100%) invert(80%) sepia(4%) saturate(179%) hue-rotate(190deg)
         brightness(93%) contrast(93%);
+
+    // Product Detail
+    --product-detail-bg: #292e39;
+
+    // Breadcrums
+    --breadcrums-bg: #171c28;
+    --breadcrums-shadow: rgba(23, 28, 40, 0.2);
 }

@@ -68,4 +68,11 @@ html {
     @include abstracts.screen(md) {
         --auth-intro-bg: #fff;
     }
+
+    // Product Detail
+    --product-detail-bg: #fff;
+
+    // Breadcrums
+    --breadcrums-bg: #f6f6f6;
+    --breadcrums-shadow: rgba(237, 237, 246, 0.2);
 }

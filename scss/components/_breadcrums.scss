@@ -1,1 +1,33 @@
 @use "../abstracts";
+
+.breadcrums {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 64px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--breadcrums-bg);
+    box-shadow: 0px 20px 60px 10px var(--breadcrums-shadow);
+    flex-wrap: wrap;
+
+    @include abstracts.screen(md) {
+        gap: 16px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        color: var(--Secondary-Color-Secondary-2, #9e9da8);
+        font-size: 1.6rem;
+        white-space: nowrap;
+        font-weight: 500;
+        line-height: 150%;
+
+        &--current {
+            color: inherit;
+        }
+    }
+}
