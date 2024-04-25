@@ -26,6 +26,10 @@
         font-weight: 500;
         line-height: 150%;
 
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+
         &--current {
             color: inherit;
         }

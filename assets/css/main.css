@@ -2349,6 +2349,11 @@ html {
   font-weight: 500;
   line-height: 150%;
 }
+@media (max-width: 767.98px) {
+  .breadcrums__link {
+    font-size: 1.4rem;
+  }
+}
 .breadcrums__link--current {
   color: inherit;
 }
